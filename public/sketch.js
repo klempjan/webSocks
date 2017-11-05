@@ -4,7 +4,7 @@ function setup() {
     createCanvas(700,250);
     background(51);
 
-    socket = io.connect('http://localhost:3000');
+    socket = io.connect('http://localhost:5000');
     socket.on('mouse', newDrawing);
 
 }
@@ -21,9 +21,9 @@ function mouseDragged() {
     var data = {
         x: mouseX,
         y: mouseY
-    }
+    };
 
-    socket.emit('mouse', data)
+    socket.emit('mouse', data);
 
     noStroke();
     fill(255);

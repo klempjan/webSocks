@@ -17,5 +17,12 @@
   "dependencies": {
     "express": "^4.15.3",
     "socket.io": "^2.0.4"
+  },
+  "engines": {
+    "node": "6.11.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/klempjan/webSocks.git"
   }
 }
