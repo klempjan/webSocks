@@ -4,7 +4,7 @@ function setup() {
     createCanvas(700,250);
     background(51);
 
-    socket = io.connect('http://localhost:5000');
+    socket = io.connect('https://stark-oasis-28897.herokuapp.com:5000');
     socket.on('mouse', newDrawing);
 
 }
