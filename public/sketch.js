@@ -1,7 +1,7 @@
 var socket;
 
 function setup() {
-    createCanvas(700,250);
+    createCanvas(850,850);
     background(51);
 
     socket = io.connect('https://stark-oasis-28897.herokuapp.com');
@@ -12,7 +12,7 @@ function setup() {
 function newDrawing(data) {
     noStroke();
     fill(255,0,100);
-    ellipse(data.x,data.y,36,36);
+    ellipse(data.x,data.y,30,30);
 }
 
 function mouseDragged() {
